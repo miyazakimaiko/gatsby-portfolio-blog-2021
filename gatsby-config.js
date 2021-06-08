@@ -144,7 +144,7 @@ module.exports = {
     {
       resolve: "gatsby-remark-related-posts",
       options: {
-        posts_dir: `${__dirname}/posts`,
+        posts_dir: `${__dirname}/content/blog`,
         doc_lang: "en",
       },
     },
