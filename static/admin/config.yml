@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: miyazakimaiko/portfolio-blog-2021
+  repo: miyazakimaiko/gatsby-portfolio-blog-2021
 
 media_folder: content/assets
 public_folder: ../assets
