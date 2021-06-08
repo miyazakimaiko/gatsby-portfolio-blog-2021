@@ -6,7 +6,7 @@ export default () => (
     <StaticQuery
     query={graphql`
         query ReadNextQuery ($relatedFilePaths: [String]) {
-            relatedArticles: allContentfulBlog (
+            relatedArticles: allMarkdownRemark (
                 limit: 6
                 filter: {
                     topics: { in: $relatedFilePaths }
@@ -21,7 +21,7 @@ export default () => (
                         featuredImage {
                             fluid(maxWidth: 300, quality: 85) {
                                 src
-                                ...GatsbyContentfulFluid
+                                ...GatsbyImageSharpFluid
                             }
                         }
                         topics {
