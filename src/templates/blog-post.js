@@ -70,7 +70,7 @@ const BlogTemplate = (props) => {
 export default BlogTemplate
 
 export const query = graphql`
-    query BlogTemplate($id: String!) {
+    query BlogTemplate($id: String!, $relatedFilePaths: List) {
         allMarkdownRemark(id: { eq: $id }) {
             title
             id
