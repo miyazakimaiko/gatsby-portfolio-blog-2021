@@ -141,5 +141,12 @@ module.exports = {
         }]
       }
     },
+    {
+      resolve: "gatsby-remark-related-posts",
+      options: {
+        posts_dir: `${__dirname}/posts`,
+        doc_lang: "en",
+      },
+    },
   ],
 }

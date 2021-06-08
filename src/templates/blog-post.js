@@ -71,7 +71,7 @@ export default BlogTemplate
 
 export const query = graphql`
     query BlogTemplate($id: String!) {
-        contentfulBlog(id: { eq: $id }) {
+        allMarkdownRemark(id: { eq: $id }) {
             title
             id
             slug
@@ -90,19 +90,19 @@ export const query = graphql`
             seoKeywords
             seoImage {
                 fluid(maxWidth: 1200, quality: 100) {
-                    ...GatsbyContentfulFluid
+                    ...GatsbyImageSharpFluid
                     src
                 }
             }
             featuredImage {
                 fluid(maxWidth: 1200, quality: 100) {
-                    ...GatsbyContentfulFluid
+                    ...GatsbyImageSharpFluid
                     src
                 }
             }
-            createdAt(formatString: "DD MMMM 'YYYY")
+            date(formatString: "DD MMMM 'YYYY")
             updatedAt(formatString: "DD MMMM 'YYYY")
-            relatedArticles: allContenfulBlog(
+            relatedArticles: allMarkdownRemark(
                 filter: { fileAbsolutePath: { in: $relatedFilePaths } }
             )
         }
