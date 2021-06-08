@@ -13,7 +13,7 @@ collections:
     create: true
     fields:
       - { name: path, label: Path }
-      - { name: createdAt, label: Date, widget: date }
+      - { name: date, label: Date, widget: date }
       - { name: updatedAt, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: description, label: Description }
@@ -25,4 +25,12 @@ collections:
       - { name: seoDescription, label: SEO Description }
       - { name: seoImage, label: SEO Image }
       - { name: seoAuthor, label: SEO Author }
-      
+
+  - name: topics
+    label: Topics
+    folder: content/topics
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: slug, label: Slug }
+  
