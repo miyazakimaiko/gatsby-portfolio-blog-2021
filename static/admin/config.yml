@@ -25,7 +25,7 @@ collections:
       - { name: seoDescription, label: SEO Description }
       - { name: seoImage, label: SEO Image }
       - { name: seoAuthor, label: SEO Author }
-      - { name: relatedFilePaths, label: Related File Paths widget: list }
+      - { name: relatedFilePaths, label: Related File Paths, widget: list }
 
   - name: topics
     label: Topics
