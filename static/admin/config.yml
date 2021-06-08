@@ -17,4 +17,11 @@ collections:
       - { name: title, label: Title }
       - { name: description, label: Description }
       - { name: body, label: Body, widget: markdown }
-      - { name: tags, label: Tags, widget: list }
+      - { name: topics, label: Topics, widget: list }
+      - { name: featuredImage, label: Featured Image, widget: image }
+      - { name: featured, label: Featured, widget: boolean }
+      - { name: seoTitle, label: SEO Title }
+      - { name: seoDescription, label: SEO Description }
+      - { name: seoImage, label: SEO Image }
+      - { name: seoAuthor, label: SEO Author }
+      
