@@ -1,13 +1,13 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Blog from "../components/blog"
+import About from "../components/about"
 
-const BlogPage = () => (
+const AboutPage = () => (
   <Layout>
-    <Seo title="Blog" />
-    <Blog />
+    <Seo title="About" />
+    <About />
   </Layout>
 )
 
-export default BlogPage
+export default AboutPage
