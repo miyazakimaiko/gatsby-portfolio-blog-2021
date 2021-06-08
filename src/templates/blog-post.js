@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import './blog.css';
+import './blog-post.css';
 
 const BlogTemplate = (props) => {
     return (
